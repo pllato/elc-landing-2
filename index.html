@@ -29,8 +29,9 @@
       background-color: #2184f9;
       margin: 0;
       overflow: hidden;
-      height: 100vh;
       min-height: 600px;
+      height: 100vh;
+      max-height: 860px;
       display: flex;
       align-items: center;
     }
@@ -166,8 +167,15 @@
     @media (max-width: 768px) {
       .hero {
         height: auto;
+        min-height: auto;
+        max-height: none;
         padding-top: 60px;
         padding-bottom: 40px;
+      }
+      .hero::before {
+        background-position: center top;
+        background-size: contain;
+        opacity: 0.2;
       }
       h1 {
         font-size: 32px;
