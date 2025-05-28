@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ELC | Быстрый английский</title>
   <style>
     body {
@@ -25,28 +25,23 @@
       background-size: cover;
       background-position: center;
       position: relative;
-      height: calc(100vh - 72px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      padding: 60px 20px 100px;
     }
 
     .hero__overlay {
       background-color: rgba(0, 102, 204, 0.85);
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 0 20px;
-      box-sizing: border-box;
+      border-radius: 20px;
+      max-width: 960px;
+      margin: auto;
+      padding: 40px 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
 
     .hero__badges {
       display: flex;
+      justify-content: center;
       gap: 16px;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
       flex-wrap: wrap;
     }
 
@@ -71,7 +66,7 @@
     }
 
     h1 {
-      font-size: 32px;
+      font-size: 36px;
       font-weight: bold;
       text-align: center;
       color: white;
@@ -81,7 +76,8 @@
     ul.hero__features {
       list-style: none;
       padding: 0;
-      margin: 0;
+      margin: 0 auto;
+      max-width: 640px;
     }
 
     ul.hero__features li {
@@ -99,7 +95,7 @@
 
     .form-container {
       max-width: 480px;
-      margin: -50px auto 60px;
+      margin: -60px auto 80px;
       background: white;
       border-radius: 20px;
       padding: 24px;
@@ -112,6 +108,7 @@
       font-size: 20px;
       margin-bottom: 24px;
       color: #222;
+      text-align: center;
     }
 
     .form-container input {
@@ -139,7 +136,7 @@
 
     @media (max-width: 600px) {
       h1 {
-        font-size: 24px;
+        font-size: 26px;
       }
 
       ul.hero__features li {
@@ -182,7 +179,7 @@
     <h2>Запишитесь на 1 бесплатный урок<br>+консультация</h2>
     <form id="tg-form">
       <input type="text" id="name" placeholder="Имя" required />
-      <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" required />
+      <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" value="+7 " required />
       <button type="submit">Хочу на 1 бесплатный урок</button>
     </form>
   </div>
