@@ -29,17 +29,14 @@
       background-color: #2184f9;
       margin: 0;
       overflow: hidden;
-      min-height: 600px;
-      height: 100vh;
-      max-height: 860px;
-      display: flex;
-      align-items: center;
+      height: auto;
+      padding: 40px 24px;
     }
 
     .hero::before {
       content: "";
       background: url('images/hero_bg.png') no-repeat left center;
-      background-size: cover;
+      background-size: contain;
       opacity: 0.25;
       position: absolute;
       top: 0;
@@ -52,7 +49,6 @@
     .hero__overlay {
       position: relative;
       z-index: 1;
-      padding: 40px 24px;
       max-width: 1000px;
       margin: 0 auto;
       display: flex;
@@ -89,7 +85,7 @@
     }
 
     h1 {
-      font-size: 44px;
+      font-size: 42px;
       font-weight: 800;
       margin-bottom: 24px;
       color: #fff;
@@ -165,27 +161,16 @@
     }
 
     @media (max-width: 768px) {
-      .hero {
-        height: auto;
-        min-height: auto;
-        max-height: none;
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .hero::before {
-        background-position: center top;
-        background-size: contain;
-        opacity: 0.2;
-      }
       h1 {
-        font-size: 32px;
+        font-size: 30px;
       }
       .hero__features li {
         font-size: 16px;
       }
-      .hero__overlay {
-        align-items: center;
-        text-align: center;
+      .hero::before {
+        background-position: center top;
+        background-size: cover;
+        opacity: 0.2;
       }
     }
   </style>
