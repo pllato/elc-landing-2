@@ -19,32 +19,33 @@
     }
 
     header img {
-      height: 60px;
+      height: 68px;
     }
 
     .hero {
-      background: url('images/hero_bg.png') no-repeat left top;
+      background: url('images/hero_bg.png') no-repeat center;
       background-size: cover;
-      padding: 80px 20px 100px;
-      text-align: center;
-      color: white;
-      position: relative;
+      padding: 0;
+      margin: 0;
     }
 
     .hero__overlay {
       background-color: rgba(0, 102, 204, 0.85);
-      border-radius: 24px;
-      padding: 40px 24px;
-      max-width: 960px;
+      padding: 60px 24px 80px;
+      max-width: 1000px;
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
     }
 
     .hero__badges {
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
       gap: 16px;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
     }
 
     .badge {
@@ -54,6 +55,7 @@
       font-size: 14px;
       display: flex;
       align-items: center;
+      color: #fff;
     }
 
     .badge img {
@@ -67,17 +69,17 @@
     }
 
     h1 {
-      font-size: 42px;
-      font-weight: 700;
+      font-size: 46px;
+      font-weight: 800;
       margin-bottom: 32px;
+      color: #fff;
     }
 
     .hero__features {
       list-style: none;
       padding: 0;
-      margin: 0 auto;
-      max-width: 600px;
-      text-align: left;
+      margin: 0;
+      max-width: 700px;
     }
 
     .hero__features li {
@@ -85,6 +87,7 @@
       margin-bottom: 18px;
       display: flex;
       align-items: center;
+      color: white;
     }
 
     .hero__features li img {
@@ -93,13 +96,13 @@
     }
 
     .form-container {
-      max-width: 480px;
-      margin: -60px auto 80px;
+      max-width: 500px;
+      margin: -40px auto 80px;
       background: white;
-      border-radius: 20px;
+      border-radius: 24px;
       padding: 32px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      z-index: 2;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      z-index: 3;
       position: relative;
     }
 
@@ -135,11 +138,16 @@
 
     @media (max-width: 600px) {
       h1 {
-        font-size: 26px;
+        font-size: 30px;
       }
 
       .hero__features li {
         font-size: 16px;
+      }
+
+      .hero__overlay {
+        align-items: center;
+        text-align: center;
       }
     }
   </style>
