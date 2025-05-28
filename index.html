@@ -1,94 +1,142 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  color: #fff;
-}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELC | Быстрый английский</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+    }
 
-.hero {
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
+    header {
+      background-color: white;
+      padding: 16px 24px;
+    }
 
-.hero__overlay {
-  background-color: rgba(0, 102, 204, 0.85);
-  width: 100%;
-  height: 100%;
-  padding: 30px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  position: relative;
-}
+    header img {
+      height: 40px;
+    }
 
-.hero__header {
-  position: absolute;
-  top: 20px;
-  left: 30px;
-}
+    .hero {
+      background-image: url('images/hero_bg_final.png');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      height: calc(100vh - 72px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-.hero__header .logo {
-  height: 40px;
-}
+    .hero__overlay {
+      background-color: rgba(0, 102, 204, 0.85);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
 
-.hero__center {
-  margin: auto;
-  text-align: center;
-}
+    .hero__badges {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
 
-.hero__badges {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
-}
+    .badge {
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 8px 14px;
+      border-radius: 16px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      color: white;
+    }
 
-.badge {
-  display: flex;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.15);
-  padding: 8px 14px;
-  border-radius: 16px;
-  font-size: 14px;
-}
+    .badge img {
+      height: 18px;
+      margin-right: 6px;
+    }
 
-.badge img {
-  height: 18px;
-  margin-right: 6px;
-}
+    .logo-2gis {
+      height: 20px;
+      margin-left: 6px;
+    }
 
-.logo-2gis {
-  height: 20px;
-  margin-left: 6px;
-}
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+      color: white;
+      margin-bottom: 32px;
+    }
 
-.hero__title {
-  font-size: 32px;
-  font-weight: 700;
-  margin: 0 0 30px;
-  line-height: 1.4;
-}
+    ul.hero__features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
 
-.hero__features {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+    ul.hero__features li {
+      font-size: 18px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      color: white;
+    }
 
-.hero__features li {
-  font-size: 18px;
-  margin: 10px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    ul.hero__features li img {
+      height: 20px;
+      margin-right: 10px;
+    }
 
-.hero__features img {
-  height: 20px;
-  margin-right: 10px;
-}
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      ul.hero__features li {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/ELC_logo.png" alt="ELC Logo">
+  </header>
+
+  <section class="hero">
+    <div class="hero__overlay">
+      <div class="hero__badges">
+        <div class="badge">
+          <img src="images/heart_icon.png" alt="Heart">
+          <span>10.000+ выпускников</span>
+        </div>
+        <div class="badge">
+          <img src="images/star_icon.png" alt="Star">
+          <span>4.9 из 5</span>
+          <img src="images/2GIS_logo.png" alt="2GIS" class="logo-2gis">
+        </div>
+      </div>
+
+      <h1>Быстрый английский<br>за 2 месяца</h1>
+
+      <ul class="hero__features">
+        <li><img src="images/lightning_icon.png" alt="">Гарантия результата: +1 уровень за 2 месяца</li>
+        <li><img src="images/lightning_icon.png" alt="">Бесплатная консультация с топовым преподавателем ELC</li>
+        <li><img src="images/lightning_icon.png" alt="">Составим план обучения</li>
+      </ul>
+    </div>
+  </section>
+
+</body>
+</html>
